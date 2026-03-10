@@ -1,6 +1,8 @@
 :root {
   --bg-primary: #0a0a0c;
   --bg-secondary: #131316;
+  --bg-rgb: 10, 10, 12;
+  --text-rgb: 255, 255, 255;
   --bg-card: rgba(255, 255, 255, 0.03);
   --text-primary: #f8f9fa;
   --text-secondary: #a1a1aa;
@@ -12,6 +14,24 @@
   --success: #10b981;
   --gradient-text: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
   --gradient-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(236, 72, 153, 0.1) 100%);
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --bg-rgb: 255, 255, 255;
+  --text-rgb: 0, 0, 0;
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --brand-primary: #4f46e5;
+  --brand-primary-hover: #4338ca;
+  --brand-secondary: #db2777;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --success: #059669;
+  --gradient-text: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --gradient-bg: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(219, 39, 119, 0.05) 100%);
 }
 
 * {

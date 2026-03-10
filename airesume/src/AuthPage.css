@@ -15,7 +15,7 @@
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(10, 10, 12, 0) 70%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: 1;
     filter: blur(60px);
@@ -27,7 +27,7 @@
     right: -10%;
     width: 40vw;
     height: 40vw;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(10, 10, 12, 0) 70%);
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: 1;
     filter: blur(60px);
@@ -115,7 +115,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(10, 10, 12, 0.4);
+    background: rgba(var(--bg-rgb), 0.4);
 }
 
 .auth-header {
@@ -164,7 +164,7 @@
 
 .input-wrapper input {
     width: 100%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(var(--text-rgb), 0.05);
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
     padding: 0.875rem 1rem 0.875rem 2.75rem;
@@ -181,7 +181,7 @@
 .input-wrapper input:focus {
     outline: none;
     border-color: var(--brand-primary);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(var(--text-rgb), 0.08);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
@@ -230,7 +230,7 @@
     justify-content: center;
     gap: 0.75rem;
     padding: 0.875rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(var(--text-rgb), 0.05);
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
     color: var(--text-primary);
@@ -241,7 +241,7 @@
 }
 
 .btn-social:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(var(--text-rgb), 0.1);
     transform: translateY(-2px);
 }
 
