@@ -3,6 +3,7 @@ import LandingPage from './LandingPage';
 import AuthPage from './AuthPage';
 import LoginPage from './LoginPage';
 import OnboardingPage from './OnboardingPage';
+import Dashboard from './Dashboard';
 import { Sun, Moon } from 'lucide-react';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         setCurrentPage('login');
       } else if (hash === '#onboarding') {
         setCurrentPage('onboarding');
+      } else if (hash === '#dashboard') {
+        setCurrentPage('dashboard');
       } else {
         setCurrentPage('landing');
       }
@@ -69,6 +72,7 @@ function App() {
       {currentPage === 'auth' && <AuthPage />}
       {currentPage === 'login' && <LoginPage />}
       {currentPage === 'onboarding' && <OnboardingPage />}
+      {currentPage === 'dashboard' && <Dashboard />}
     </>
   );
 }
