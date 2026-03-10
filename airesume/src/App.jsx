@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LandingPage from './LandingPage';
 import AuthPage from './AuthPage';
 import LoginPage from './LoginPage';
+import OnboardingPage from './OnboardingPage';
 import { Sun, Moon } from 'lucide-react';
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         setCurrentPage('auth');
       } else if (hash === '#login') {
         setCurrentPage('login');
+      } else if (hash === '#onboarding') {
+        setCurrentPage('onboarding');
       } else {
         setCurrentPage('landing');
       }
@@ -65,6 +68,7 @@ function App() {
       {currentPage === 'landing' && <LandingPage />}
       {currentPage === 'auth' && <AuthPage />}
       {currentPage === 'login' && <LoginPage />}
+      {currentPage === 'onboarding' && <OnboardingPage />}
     </>
   );
 }
