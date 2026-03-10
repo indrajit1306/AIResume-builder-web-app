@@ -32,7 +32,7 @@ function LandingPage() {
           </div>
           <div className="nav-actions">
             <a href="#login" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Log in</a>
-            <a href="#auth" className="btn btn-primary">Get Started</a>
+            <a href="#onboarding" className="btn btn-primary">Get Started</a>
           </div>
         </div>
       </nav>
@@ -54,7 +54,7 @@ function LandingPage() {
             The intelligent resume builder that writes, optimizes, and matches you with top jobs instantly using advanced AI algorithms.
           </p>
           <div className="hero-cta">
-            <a href="#auth" className="btn btn-primary">
+            <a href="#onboarding" className="btn btn-primary">
               Create Resume Free
               <ArrowRight size={18} />
             </a>
