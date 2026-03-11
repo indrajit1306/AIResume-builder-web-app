@@ -8,7 +8,7 @@ import { Sun, Moon } from 'lucide-react';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
