@@ -115,7 +115,7 @@
 .nav-item.active {
   background: var(--brand-primary);
   color: white;
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.3);
 }
 
 .nav-item.active .active-arrow {
@@ -383,7 +383,7 @@
 .action-btn.primary {
   background: var(--brand-primary);
   color: white;
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.25);
 }
 
 .action-btn.primary:hover {
@@ -409,7 +409,7 @@
 }
 
 .action-btn.outline:hover {
-  background: rgba(79, 70, 229, 0.1);
+  background: rgba(var(--primary-rgb), 0.1);
 }
 
 /* WIDGETS GRID */

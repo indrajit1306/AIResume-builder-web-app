@@ -38,13 +38,13 @@
 .btn-primary {
     background-color: var(--brand-primary);
     color: white;
-    box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.39);
+    box-shadow: 0 4px 14px 0 rgba(var(--primary-rgb), 0.39);
 }
 
 .btn-primary:hover {
     background-color: var(--brand-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.4);
 }
 
 .btn-secondary {
@@ -120,7 +120,6 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 .hero-glow-1 {
@@ -129,7 +128,7 @@
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, rgba(var(--bg-rgb), 0) 70%);
+    background: radial-gradient(circle, rgba(var(--primary-rgb), 0.2) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: -1;
     filter: blur(60px);
@@ -141,7 +140,7 @@
     right: -10%;
     width: 40vw;
     height: 40vw;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, rgba(var(--bg-rgb), 0) 70%);
+    background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.15) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: -1;
     filter: blur(60px);
@@ -156,10 +155,10 @@
 .hero-badge {
     display: inline-block;
     padding: 0.4rem 1rem;
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: rgba(var(--primary-rgb), 0.1);
+    border: 1px solid rgba(var(--primary-rgb), 0.2);
     border-radius: 9999px;
-    color: #a5b4fc;
+    color: var(--brand-primary);
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 2rem;
@@ -283,8 +282,8 @@
 .feature-card:hover {
     transform: translateY(-5px);
     background: rgba(var(--text-rgb), 0.05);
-    border-color: rgba(99, 102, 241, 0.3);
-    box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.1);
+    border-color: rgba(var(--primary-rgb), 0.3);
+    box-shadow: 0 10px 30px -10px rgba(var(--primary-rgb), 0.1);
 }
 
 .feature-icon-wrapper {
@@ -294,7 +293,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(var(--primary-rgb), 0.1);
     color: var(--brand-primary);
     margin-bottom: 1.5rem;
 }
@@ -451,7 +450,7 @@
 
 .pricing-card.popular {
     border-color: var(--brand-primary);
-    background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(var(--primary-rgb), 0.05) 0%, transparent 100%);
     transform: scale(1.05);
     position: relative;
 }

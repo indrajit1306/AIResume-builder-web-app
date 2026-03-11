@@ -18,7 +18,7 @@
     left: -10%;
     width: 60vw;
     height: 60vw;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(var(--bg-rgb), 0) 70%);
+    background: radial-gradient(circle, rgba(var(--primary-rgb), 0.12) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: 1;
     filter: blur(80px);
@@ -30,7 +30,7 @@
     right: -10%;
     width: 50vw;
     height: 50vw;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, rgba(var(--bg-rgb), 0) 70%);
+    background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.08) 0%, rgba(var(--bg-rgb), 0) 70%);
     border-radius: 50%;
     z-index: 1;
     filter: blur(80px);
@@ -168,11 +168,11 @@
 
 .ob-card:hover {
     background: rgba(var(--text-rgb), 0.05);
-    border-color: rgba(99, 102, 241, 0.4);
+    border-color: rgba(var(--primary-rgb), 0.4);
 }
 
 .ob-card.selected {
-    background: rgba(99, 102, 241, 0.08);
+    background: rgba(var(--primary-rgb), 0.08);
     border-color: var(--brand-primary);
     box-shadow: 0 0 0 1px var(--brand-primary);
 }
@@ -266,11 +266,11 @@
 
 .ob-list-btn:hover {
     background: rgba(var(--text-rgb), 0.05);
-    border-color: rgba(99, 102, 241, 0.4);
+    border-color: rgba(var(--primary-rgb), 0.4);
 }
 
 .ob-list-btn.selected {
-    background: rgba(99, 102, 241, 0.08);
+    background: rgba(var(--primary-rgb), 0.08);
     border-color: var(--brand-primary);
     color: var(--brand-primary);
     font-weight: 600;
@@ -296,7 +296,7 @@
 .ob-input:focus {
     border-color: var(--brand-primary);
     background: rgba(var(--text-rgb), 0.05);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.15);
 }
 
 .ob-tags-container {
@@ -311,7 +311,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(var(--primary-rgb), 0.15);
     color: var(--brand-primary);
     border-radius: 99px;
     padding: 0.6rem 1rem;
@@ -345,9 +345,9 @@
 }
 
 .ob-upload-area {
-    border: 2px dashed rgba(99, 102, 241, 0.4);
+    border: 2px dashed rgba(var(--primary-rgb), 0.4);
     border-radius: 1.5rem;
-    background: rgba(99, 102, 241, 0.02);
+    background: rgba(var(--primary-rgb), 0.02);
     min-height: 250px;
     display: flex;
     align-items: center;
@@ -357,7 +357,7 @@
 }
 
 .ob-upload-area:hover {
-    background: rgba(99, 102, 241, 0.05);
+    background: rgba(var(--primary-rgb), 0.05);
     border-color: var(--brand-primary);
 }
 
@@ -453,11 +453,11 @@
 
 .ob-goal-card:hover {
     background: rgba(var(--text-rgb), 0.05);
-    border-color: rgba(99, 102, 241, 0.4);
+    border-color: rgba(var(--primary-rgb), 0.4);
 }
 
 .ob-goal-card.selected {
-    background: rgba(99, 102, 241, 0.08);
+    background: rgba(var(--primary-rgb), 0.08);
     border-color: var(--brand-primary);
     color: var(--brand-primary);
 }
