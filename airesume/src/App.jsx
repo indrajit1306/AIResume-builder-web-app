@@ -4,6 +4,7 @@ import AuthPage from './AuthPage';
 import LoginPage from './LoginPage';
 import OnboardingPage from './OnboardingPage';
 import Dashboard from './Dashboard';
+import TemplatesPage from './TemplatesPage';
 import { Sun, Moon } from 'lucide-react';
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
         setCurrentPage('onboarding');
       } else if (hash === '#dashboard') {
         setCurrentPage('dashboard');
+      } else if (hash === '#templates') {
+        setCurrentPage('templates');
       } else {
         setCurrentPage('landing');
       }
@@ -73,6 +76,7 @@ function App() {
       {currentPage === 'login' && <LoginPage />}
       {currentPage === 'onboarding' && <OnboardingPage />}
       {currentPage === 'dashboard' && <Dashboard />}
+      {currentPage === 'templates' && <TemplatesPage />}
     </>
   );
 }
