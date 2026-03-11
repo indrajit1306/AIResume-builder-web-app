@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AiResumeBuilder from './AiResumeBuilder';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -239,6 +240,8 @@ const Dashboard = () => {
                 </section>
               </div>
             </div>
+          ) : activeTab === 'AI Resume Builder' ? (
+            <AiResumeBuilder />
           ) : (
             <div className="placeholder-content glass-panel">
               <LayoutDashboard size={48} className="placeholder-icon" />
