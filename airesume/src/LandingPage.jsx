@@ -184,7 +184,7 @@ function LandingPage() {
       </section>
 
       {/* Templates */}
-      <section id="templates" className="section-padding templates-section">
+      <section id="templates-preview" className="section-padding templates-section">
         <div className="container text-center">
           <div className="section-header">
             <h2 className="section-title">Designs that <span className="text-gradient">get noticed</span></h2>
