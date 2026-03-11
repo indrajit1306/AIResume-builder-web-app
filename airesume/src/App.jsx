@@ -37,6 +37,9 @@ function App() {
       } else {
         setCurrentPage('landing');
       }
+      
+      // Always scroll to top on page change
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener('hashchange', handleHashChange);
