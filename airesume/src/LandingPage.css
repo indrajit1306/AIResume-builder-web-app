@@ -638,11 +638,55 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .nav-links {
+        gap: 1rem;
+    }
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links a:not([href="#templates"]) {
         display: none;
     }
+    .nav-links {
+        display: flex;
+        gap: 0.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    .nav-container {
+        padding: 0 1rem;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .logo span, .logo {
+        font-size: 1rem;
+    }
+    .logo {
+        width: 32px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-actions a[href="#login"] {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
     }
