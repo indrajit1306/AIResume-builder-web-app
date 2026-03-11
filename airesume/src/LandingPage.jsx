@@ -22,7 +22,7 @@ function LandingPage() {
         <div className="container nav-container">
           <div className="logo">
             <BrainCircuit className="logo-icon" size={28} />
-            CareerForge AI
+            <span>CareerForge AI</span>
           </div>
           <div className="nav-links">
             <a href="#features">Features</a>
@@ -198,7 +198,14 @@ function LandingPage() {
               src="/templates-preview.png"
               alt="Modern Resume Templates"
               className="templates-img"
+              style={{ marginBottom: '3rem' }}
             />
+            <div className="text-center">
+              <a href="#templates" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
+                Explore Template Gallery
+                <ArrowRight size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
