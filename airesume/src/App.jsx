@@ -5,6 +5,8 @@ import LoginPage from './LoginPage';
 import OnboardingPage from './OnboardingPage';
 import Dashboard from './Dashboard';
 import TemplatesPage from './TemplatesPage';
+import AnalysisPage from './AnalysisPage';
+import DevNav from './DevNav';
 import { Sun, Moon } from 'lucide-react';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
         setCurrentPage('onboarding');
       } else if (hash === '#dashboard') {
         setCurrentPage('dashboard');
+      } else if (hash === '#analysis') {
+        setCurrentPage('analysis');
       } else if (hash === '#templates') {
         setCurrentPage('templates');
       } else {
@@ -80,6 +84,8 @@ function App() {
       {currentPage === 'onboarding' && <OnboardingPage />}
       {currentPage === 'dashboard' && <Dashboard />}
       {currentPage === 'templates' && <TemplatesPage />}
+      {currentPage === 'analysis' && <AnalysisPage />}
+      <DevNav />
     </>
   );
 }

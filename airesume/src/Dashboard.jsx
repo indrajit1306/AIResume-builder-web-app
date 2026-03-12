@@ -35,7 +35,7 @@ const Dashboard = () => {
     { name: 'Dashboard', icon: LayoutDashboard },
     { name: 'My Resumes', icon: FileText },
     { name: 'AI Resume Builder', icon: Wand2 },
-    { name: 'Resume Score', icon: BarChart },
+    { name: 'Resume Score', icon: BarChart, link: '#analysis' },
     { name: 'Job Match', icon: Briefcase },
     { name: 'Skill Gap Analyzer', icon: TrendingUp },
     { name: 'Interview Prep', icon: MessageSquare },
@@ -77,7 +77,11 @@ const Dashboard = () => {
                   <button 
                     className={`nav-item ${activeTab === item.name ? 'active' : ''}`}
                     onClick={() => {
-                      setActiveTab(item.name);
+                      if (item.link) {
+                        window.location.hash = item.link;
+                      } else {
+                        setActiveTab(item.name);
+                      }
                       setIsSidebarOpen(false);
                     }}
                   >
@@ -148,7 +152,7 @@ const Dashboard = () => {
                     <Plus size={18} />
                     Create New
                   </button>
-                  <button className="action-btn secondary">
+                  <button className="action-btn secondary" onClick={() => window.location.hash = '#analysis'}>
                     <Upload size={18} />
                     Upload
                   </button>
