@@ -9,6 +9,7 @@ import {
   Target,
   Briefcase,
   TrendingUp,
+  MessageSquare,
   Settings2,
   ChevronUp,
   X
@@ -28,6 +29,7 @@ const DevNav = () => {
     { name: 'AI Tailoring', hash: '#tailor', icon: Target },
     { name: 'AI Job Match', hash: '#job-match', icon: Briefcase },
     { name: 'Skill Gap', hash: '#skill-gap', icon: TrendingUp },
+    { name: 'Interview Prep', hash: '#interview-prep', icon: MessageSquare },
   ];
 
   return (
