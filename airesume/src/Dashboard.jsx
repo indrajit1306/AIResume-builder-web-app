@@ -39,7 +39,7 @@ const Dashboard = () => {
     { name: 'Job Match', icon: Briefcase, link: '#job-match' },
     { name: 'Resume Score', icon: BarChart3, link: '#analysis' },
     { name: 'Skill Gap Analyzer', icon: TrendingUp, link: '#skill-gap' },
-    { name: 'Interview Prep', icon: MessageSquare },
+    { name: 'Interview Prep', icon: MessageSquare, link: '#interview-prep' },
     { name: 'Portfolio Builder', icon: Layout },
     { name: 'LinkedIn Optimizer', icon: Linkedin },
     { name: 'Settings', icon: Settings },
