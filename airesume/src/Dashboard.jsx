@@ -4,7 +4,7 @@ import {
   LayoutDashboard, 
   FileText, 
   Wand2, 
-  BarChart, 
+  BarChart3, 
   Briefcase, 
   TrendingUp, 
   MessageSquare, 
@@ -35,9 +35,10 @@ const Dashboard = () => {
     { name: 'Dashboard', icon: LayoutDashboard },
     { name: 'My Resumes', icon: FileText },
     { name: 'AI Resume Builder', icon: Wand2 },
-    { name: 'Resume Score', icon: BarChart, link: '#analysis' },
-    { name: 'Job Match', icon: Briefcase },
-    { name: 'Skill Gap Analyzer', icon: TrendingUp },
+    { name: 'Tailor for Job', icon: Target, link: '#tailor' },
+    { name: 'Job Match', icon: Briefcase, link: '#job-match' },
+    { name: 'Resume Score', icon: BarChart3, link: '#analysis' },
+    { name: 'Skill Gap Analyzer', icon: TrendingUp, link: '#skill-gap' },
     { name: 'Interview Prep', icon: MessageSquare },
     { name: 'Portfolio Builder', icon: Layout },
     { name: 'LinkedIn Optimizer', icon: Linkedin },
@@ -156,9 +157,13 @@ const Dashboard = () => {
                     <Upload size={18} />
                     Upload
                   </button>
-                  <button className="action-btn outline">
-                    <Wand2 size={18} />
+                  <button className="action-btn outline" onClick={() => window.location.hash = '#tailor'}>
+                    <Target size={18} />
                     Tailor for Job
+                  </button>
+                  <button className="action-btn outline" onClick={() => window.location.hash = '#job-match'}>
+                    <Briefcase size={18} />
+                    Find Job Match
                   </button>
                 </div>
               </section>
