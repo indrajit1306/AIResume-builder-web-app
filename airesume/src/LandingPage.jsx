@@ -27,7 +27,7 @@ function LandingPage() {
           <div className="nav-links">
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
-            <a href="#templates">Templates</a>
+            <a href="#templates-preview">Templates</a>
             <a href="#pricing">Pricing</a>
           </div>
           <div className="nav-actions">
@@ -43,25 +43,27 @@ function LandingPage() {
         <div className="hero-glow-2"></div>
 
         <div className="container hero-content">
-          <div className="hero-badge">
-            <Sparkles size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />
-            CareerForge 2.0 is now live
-          </div>
-          <h1 className="hero-title">
-            Build a <span className="text-gradient">Job-Winning</span> Resume with AI
-          </h1>
-          <p className="hero-subtitle">
-            The intelligent resume builder that writes, optimizes, and matches you with top jobs instantly using advanced AI algorithms.
-          </p>
-          <div className="hero-cta">
-            <a href="#onboarding" className="btn btn-primary">
-              Create Resume Free
-              <ArrowRight size={18} />
-            </a>
-            <button className="btn btn-secondary">
-              <PlayCircle size={18} />
-              See Demo
-            </button>
+          <div className="hero-text">
+            <div className="hero-badge">
+              <Sparkles size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />
+              CareerForge 2.0 is now live
+            </div>
+            <h1 className="hero-title">
+              Build a <span className="text-gradient">Job-Winning</span> Resume with AI
+            </h1>
+            <p className="hero-subtitle">
+              The intelligent resume builder that writes, optimizes, and matches you with top jobs instantly using advanced AI algorithms.
+            </p>
+            <div className="hero-cta">
+              <a href="#onboarding" className="btn btn-primary">
+                Create Resume Free
+                <ArrowRight size={18} />
+              </a>
+              <button className="btn btn-secondary">
+                <PlayCircle size={18} />
+                See Demo
+              </button>
+            </div>
           </div>
 
           <div className="hero-visual-wrapper">
