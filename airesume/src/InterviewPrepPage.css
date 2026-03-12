@@ -1,0 +1,133 @@
+.interview-prep-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 5rem;
+}
+
+.ip-background {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ip-glow {
+    position: absolute;
+    width: 60vw; height: 60vw;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.12;
+}
+
+.ip-glow-1 { top: -10%; left: -10%; background: radial-gradient(circle, var(--brand-primary) 0%, transparent 70%); }
+.ip-glow-2 { bottom: -10%; right: -10%; background: radial-gradient(circle, var(--brand-secondary) 0%, transparent 70%); }
+
+.ip-header {
+    background: rgba(var(--bg-rgb), 0.7);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: sticky; top: 0; z-index: 100;
+}
+
+.ip-nav { display: flex; justify-content: space-between; align-items: center; }
+.ip-logo { display: flex; align-items: center; gap: 0.75rem; font-weight: 800; font-size: 1.25rem; }
+.ip-logo-icon { color: var(--brand-primary); }
+
+.ip-main { padding-top: 4rem; position: relative; z-index: 1; }
+
+/* Setup View */
+.setup-container { max-width: 800px; margin: 0 auto; }
+.setup-hero { text-align: center; margin-bottom: 3.5rem; }
+.hero-sparkle { color: var(--brand-primary); margin-bottom: 1rem; width: 32px; height: 32px; }
+.setup-hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -0.02em; }
+.setup-hero p { font-size: 1.2rem; color: var(--text-secondary); }
+
+.setup-card { padding: 3rem; border-radius: 2.5rem; }
+.setup-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
+.setup-field label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-secondary); }
+.input-wrapper { display: flex; align-items: center; gap: 0.75rem; background: rgba(var(--text-rgb), 0.05); border: 1px solid var(--border-color); padding: 0.8rem 1.2rem; border-radius: 12px; }
+.input-wrapper input { background: transparent; border: none; font-size: 1rem; color: var(--text-primary); outline: none; width: 100%; }
+.setup-field select { width: 100%; background: rgba(var(--text-rgb), 0.05); border: 1px solid var(--border-color); padding: 0.8rem 1rem; border-radius: 12px; color: var(--text-primary); font-size: 1rem; font-weight: 600; outline: none; }
+
+.setup-footer { display: flex; justify-content: center; }
+
+/* Interview View */
+.interview-layout { display: grid; grid-template-columns: 450px 1fr; gap: 4rem; align-items: center; }
+.ai-host-side { display: flex; flex-direction: column; align-items: center; gap: 3rem; }
+
+.ai-avatar { position: relative; width: 180px; height: 180px; }
+.ai-avatar img { width: 100%; height: 100%; border-radius: 50%; border: 4px solid var(--brand-primary); position: relative; z-index: 2; }
+.avatar-pulse { position: absolute; inset: -10px; border-radius: 50%; background: var(--brand-primary); opacity: 0.2; z-index: 1; }
+.ai-avatar.active .avatar-pulse { animation: pulseAvatar 2s infinite; }
+
+@keyframes pulseAvatar {
+    0% { transform: scale(1); opacity: 0.3; }
+    100% { transform: scale(1.4); opacity: 0; }
+}
+
+.question-card { padding: 2.5rem; border-radius: 1.5rem; text-align: center; width: 100%; }
+.q-label { font-size: 0.75rem; font-weight: 800; color: var(--brand-primary); letter-spacing: 0.1em; display: block; margin-bottom: 1rem; }
+.question-card h3 { font-size: 1.6rem; line-height: 1.4; font-weight: 700; color: var(--text-primary); }
+
+.user-recording-side { display: flex; flex-direction: column; gap: 2rem; }
+.recording-preview { aspect-ratio: 16/9; background: #000; border-radius: 2rem; position: relative; overflow: hidden; }
+.camera-overlay { position: absolute; top: 1.5rem; left: 1.5rem; display: flex; align-items: center; gap: 0.75rem; background: rgba(0,0,0,0.5); padding: 0.5rem 1rem; border-radius: 999px; color: #fff; font-size: 0.8rem; font-weight: 600; }
+
+.visualizer { position: absolute; bottom: 2rem; left: 0; right: 0; display: flex; justify-content: center; gap: 4px; height: 30px; }
+.visualizer span { width: 4px; background: var(--brand-primary); border-radius: 2px; }
+.visualizer span:nth-child(1) { height: 60%; animation: viz 0.5s ease infinite alternate; }
+.visualizer span:nth-child(2) { height: 100%; animation: viz 0.7s ease infinite alternate; }
+.visualizer span:nth-child(3) { height: 80%; animation: viz 0.4s ease infinite alternate; }
+.visualizer span:nth-child(4) { height: 40%; animation: viz 0.8s ease infinite alternate; }
+.visualizer span:nth-child(5) { height: 90%; animation: viz 0.6s ease infinite alternate; }
+
+@keyframes viz { 0% { transform: scaleY(0.5); } 100% { transform: scaleY(1.5); } }
+
+.recording-controls { display: flex; align-items: center; justify-content: center; gap: 2rem; }
+.timer { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.2rem; color: var(--text-secondary); }
+.record-btn { width: 80px; height: 80px; border-radius: 50%; border: none; background: var(--brand-primary); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.3); }
+.record-btn.recording { background: #ef4444; box-shadow: 0 0 40px rgba(239, 68, 68, 0.5); animation: recBtn 1s infinite; }
+
+@keyframes recBtn { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+
+/* Analysis Overlay */
+.analysis-overlay { position: fixed; inset: 0; background: rgba(var(--bg-rgb), 0.9); backdrop-filter: blur(10px); z-index: 1000; display: flex; align-items: center; justify-content: center; text-align: center; }
+.loader-container { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+.spinning { color: var(--brand-primary); animation: spin 2s linear infinite; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* Results */
+.results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem; background: var(--bg-card); padding: 2.5rem 3.5rem; border-radius: 2.5rem; border: 1px solid var(--border-color); }
+.score-widget { display: flex; align-items: center; gap: 2.5rem; }
+.score-circle { position: relative; width: 100px; height: 100px; }
+.circle-bg { fill: none; stroke: var(--border-color); stroke-width: 3.5; }
+.circle-fill { fill: none; stroke: var(--brand-primary); stroke-width: 3.5; stroke-linecap: round; transform: rotate(-90deg); transform-origin: 50% 50%; transition: stroke-dasharray 1s ease; }
+.score-text { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.score-text .val { font-size: 1.4rem; font-weight: 800; }
+.score-text .lab { font-size: 0.6rem; text-transform: uppercase; font-weight: 700; opacity: 0.6; }
+.verdict { font-size: 1.5rem; font-weight: 700; }
+
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.feedback-card { background: var(--bg-card); padding: 2rem; border-radius: 1.5rem; border: 1px solid var(--border-color); }
+.feedback-card h4 { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 800; }
+.strengths h4 { color: #22c55e; }
+.improvements h4 { color: #f97316; }
+.feedback-card ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.feedback-card ul li { position: relative; padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.4; }
+.feedback-card ul li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+.suggestion-full { grid-column: span 2; }
+.suggestion-full h4 { color: var(--brand-primary); }
+.suggestion-full p { font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 2rem; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .interview-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .setup-grid { grid-template-columns: 1fr; }
+    .results-grid { grid-template-columns: 1fr; }
+    .suggestion-full { grid-column: span 1; }
+}
