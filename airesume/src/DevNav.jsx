@@ -6,6 +6,9 @@ import {
   LayoutDashboard, 
   Layers, 
   BarChart3, 
+  Target,
+  Briefcase,
+  TrendingUp,
   Settings2,
   ChevronUp,
   X
@@ -22,6 +25,9 @@ const DevNav = () => {
     { name: 'Dashboard', hash: '#dashboard', icon: LayoutDashboard },
     { name: 'Templates', hash: '#templates', icon: Layers },
     { name: 'AI Analysis', hash: '#analysis', icon: BarChart3 },
+    { name: 'AI Tailoring', hash: '#tailor', icon: Target },
+    { name: 'AI Job Match', hash: '#job-match', icon: Briefcase },
+    { name: 'Skill Gap', hash: '#skill-gap', icon: TrendingUp },
   ];
 
   return (
