@@ -10,6 +10,7 @@ import {
   Briefcase,
   TrendingUp,
   MessageSquare,
+  Layout,
   Settings2,
   ChevronUp,
   X
@@ -30,6 +31,7 @@ const DevNav = () => {
     { name: 'AI Job Match', hash: '#job-match', icon: Briefcase },
     { name: 'Skill Gap', hash: '#skill-gap', icon: TrendingUp },
     { name: 'Interview Prep', hash: '#interview-prep', icon: MessageSquare },
+    { name: 'Portfolio', hash: '#portfolio', icon: Layout },
   ];
 
   return (
