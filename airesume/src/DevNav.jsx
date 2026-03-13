@@ -11,6 +11,7 @@ import {
   TrendingUp,
   MessageSquare,
   Layout,
+  Linkedin,
   Settings2,
   ChevronUp,
   X
@@ -32,6 +33,7 @@ const DevNav = () => {
     { name: 'Skill Gap', hash: '#skill-gap', icon: TrendingUp },
     { name: 'Interview Prep', hash: '#interview-prep', icon: MessageSquare },
     { name: 'Portfolio', hash: '#portfolio', icon: Layout },
+    { name: 'LinkedIn Opt', hash: '#linkedin-optimizer', icon: Linkedin },
   ];
 
   return (
