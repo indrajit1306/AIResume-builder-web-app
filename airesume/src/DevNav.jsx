@@ -13,6 +13,7 @@ import {
   Layout,
   Linkedin,
   CreditCard,
+  ShieldCheck,
   Settings2,
   ChevronUp,
   X
@@ -36,6 +37,7 @@ const DevNav = () => {
     { name: 'Portfolio', hash: '#portfolio', icon: Layout },
     { name: 'LinkedIn Opt', hash: '#linkedin-optimizer', icon: Linkedin },
     { name: 'Pricing', hash: '#pricing', icon: CreditCard },
+    { name: 'Admin', hash: '#admin', icon: ShieldCheck },
   ];
 
   return (
