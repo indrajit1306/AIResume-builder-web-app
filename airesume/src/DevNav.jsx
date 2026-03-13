@@ -12,6 +12,7 @@ import {
   MessageSquare,
   Layout,
   Linkedin,
+  CreditCard,
   Settings2,
   ChevronUp,
   X
@@ -34,6 +35,7 @@ const DevNav = () => {
     { name: 'Interview Prep', hash: '#interview-prep', icon: MessageSquare },
     { name: 'Portfolio', hash: '#portfolio', icon: Layout },
     { name: 'LinkedIn Opt', hash: '#linkedin-optimizer', icon: Linkedin },
+    { name: 'Pricing', hash: '#pricing', icon: CreditCard },
   ];
 
   return (
