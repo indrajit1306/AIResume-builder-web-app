@@ -12,6 +12,7 @@ import SkillGapPage from './SkillGapPage';
 import InterviewPrepPage from './InterviewPrepPage';
 import PortfolioPage from './PortfolioPage';
 import LinkedInOptimizerPage from './LinkedInOptimizerPage';
+import PricingPage from './PricingPage';
 import DevNav from './DevNav';
 import { Sun, Moon } from 'lucide-react';
 
@@ -80,6 +81,8 @@ function App() {
         setCurrentPage('portfolio');
       } else if (hash === '#linkedin-optimizer') {
         setCurrentPage('linkedin-optimizer');
+      } else if (hash === '#pricing') {
+        setCurrentPage('pricing');
       } else if (hash === '#templates') {
         setCurrentPage('templates');
       } else {
@@ -138,6 +141,7 @@ function App() {
       {currentPage === 'interview-prep' && <InterviewPrepPage />}
       {currentPage === 'portfolio' && <PortfolioPage />}
       {currentPage === 'linkedin-optimizer' && <LinkedInOptimizerPage />}
+      {currentPage === 'pricing' && <PricingPage />}
       <DevNav />
     </ErrorBoundary>
   );
