@@ -13,6 +13,7 @@ import InterviewPrepPage from './InterviewPrepPage';
 import PortfolioPage from './PortfolioPage';
 import LinkedInOptimizerPage from './LinkedInOptimizerPage';
 import PricingPage from './PricingPage';
+import AdminDashboard from './AdminDashboard';
 import DevNav from './DevNav';
 import { Sun, Moon } from 'lucide-react';
 
@@ -83,6 +84,8 @@ function App() {
         setCurrentPage('linkedin-optimizer');
       } else if (hash === '#pricing') {
         setCurrentPage('pricing');
+      } else if (hash === '#admin') {
+        setCurrentPage('admin');
       } else if (hash === '#templates') {
         setCurrentPage('templates');
       } else {
@@ -142,6 +145,7 @@ function App() {
       {currentPage === 'portfolio' && <PortfolioPage />}
       {currentPage === 'linkedin-optimizer' && <LinkedInOptimizerPage />}
       {currentPage === 'pricing' && <PricingPage />}
+      {currentPage === 'admin' && <AdminDashboard />}
       <DevNav />
     </ErrorBoundary>
   );
