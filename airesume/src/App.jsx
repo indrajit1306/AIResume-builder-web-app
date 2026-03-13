@@ -10,6 +10,7 @@ import TailorPage from './TailorPage';
 import JobMatchPage from './JobMatchPage';
 import SkillGapPage from './SkillGapPage';
 import InterviewPrepPage from './InterviewPrepPage';
+import PortfolioPage from './PortfolioPage';
 import DevNav from './DevNav';
 import { Sun, Moon } from 'lucide-react';
 
@@ -74,6 +75,8 @@ function App() {
         setCurrentPage('skill-gap');
       } else if (hash === '#interview-prep') {
         setCurrentPage('interview-prep');
+      } else if (hash === '#portfolio') {
+        setCurrentPage('portfolio');
       } else if (hash === '#templates') {
         setCurrentPage('templates');
       } else {
@@ -130,6 +133,7 @@ function App() {
       {currentPage === 'job-match' && <JobMatchPage />}
       {currentPage === 'skill-gap' && <SkillGapPage />}
       {currentPage === 'interview-prep' && <InterviewPrepPage />}
+      {currentPage === 'portfolio' && <PortfolioPage />}
       <DevNav />
     </ErrorBoundary>
   );
