@@ -41,7 +41,7 @@ const Dashboard = () => {
     { name: 'Skill Gap Analyzer', icon: TrendingUp, link: '#skill-gap' },
     { name: 'Interview Prep', icon: MessageSquare, link: '#interview-prep' },
     { name: 'Portfolio Builder', icon: Layout, link: '#portfolio' },
-    { name: 'LinkedIn Optimizer', icon: Linkedin },
+    { name: 'LinkedIn Optimizer', icon: Linkedin, link: '#linkedin-optimizer' },
     { name: 'Settings', icon: Settings },
   ];
 
