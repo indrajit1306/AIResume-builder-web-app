@@ -42,6 +42,7 @@ const Dashboard = () => {
     { name: 'Interview Prep', icon: MessageSquare, link: '#interview-prep' },
     { name: 'Portfolio Builder', icon: Layout, link: '#portfolio' },
     { name: 'LinkedIn Optimizer', icon: Linkedin, link: '#linkedin-optimizer' },
+    { name: 'Pricing', icon: CreditCard, link: '#pricing-plans' },
     { name: 'Settings', icon: Settings },
   ];
 
