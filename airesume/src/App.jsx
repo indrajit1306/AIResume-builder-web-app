@@ -84,7 +84,7 @@ function App() {
         nextPage = 'portfolio';
       } else if (hash === '#linkedin-optimizer') {
         nextPage = 'linkedin-optimizer';
-      } else if (hash === '#pricing') {
+      } else if (hash === '#pricing-plans') {
         nextPage = 'pricing';
       } else if (hash === '#admin') {
         nextPage = 'admin';
