@@ -60,40 +60,47 @@ function App() {
   React.useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
+      let nextPage = 'landing';
+
       if (hash === '#auth') {
-        setCurrentPage('auth');
+        nextPage = 'auth';
       } else if (hash === '#login') {
-        setCurrentPage('login');
+        nextPage = 'login';
       } else if (hash === '#onboarding') {
-        setCurrentPage('onboarding');
+        nextPage = 'onboarding';
       } else if (hash === '#dashboard') {
-        setCurrentPage('dashboard');
+        nextPage = 'dashboard';
       } else if (hash === '#analysis') {
-        setCurrentPage('analysis');
+        nextPage = 'analysis';
       } else if (hash === '#tailor') {
-        setCurrentPage('tailor');
+        nextPage = 'tailor';
       } else if (hash === '#job-match') {
-        setCurrentPage('job-match');
+        nextPage = 'job-match';
       } else if (hash === '#skill-gap') {
-        setCurrentPage('skill-gap');
+        nextPage = 'skill-gap';
       } else if (hash === '#interview-prep') {
-        setCurrentPage('interview-prep');
+        nextPage = 'interview-prep';
       } else if (hash === '#portfolio') {
-        setCurrentPage('portfolio');
+        nextPage = 'portfolio';
       } else if (hash === '#linkedin-optimizer') {
-        setCurrentPage('linkedin-optimizer');
+        nextPage = 'linkedin-optimizer';
       } else if (hash === '#pricing') {
-        setCurrentPage('pricing');
+        nextPage = 'pricing';
       } else if (hash === '#admin') {
-        setCurrentPage('admin');
+        nextPage = 'admin';
       } else if (hash === '#templates') {
-        setCurrentPage('templates');
-      } else {
-        setCurrentPage('landing');
+        nextPage = 'templates';
       }
-      
-      // Always scroll to top on page change
-      window.scrollTo(0, 0);
+
+      // If we are navigating to a new page, scroll to top
+      // If the current hash is just an internal anchor (e.g. #features) on the landing page,
+      // stay on 'landing' and DON'T force scroll to top, so browser can jump to ID
+      setCurrentPage((prev) => {
+        if (prev !== nextPage) {
+          window.scrollTo(0, 0);
+        }
+        return nextPage;
+      });
     };
 
     window.addEventListener('hashchange', handleHashChange);
