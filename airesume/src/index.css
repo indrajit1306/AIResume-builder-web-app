@@ -48,6 +48,10 @@
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   overflow-y: auto !important;
   overflow-x: hidden !important;
@@ -55,6 +59,11 @@ html, body {
   min-height: 100vh;
   scrollbar-width: thin; /* Firefox */
   scrollbar-color: var(--brand-primary) transparent; /* Firefox */
+}
+
+/* Ensure sections jump to the right place with the fixed header */
+[id] {
+  scroll-margin-top: 100px;
 }
 
 /* Chrome, Edge, and Safari */
