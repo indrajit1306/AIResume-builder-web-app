@@ -343,6 +343,28 @@ function LandingPage() {
               <button className="btn btn-secondary" style={{ width: '100%' }}>Get Premium</button>
             </div>
           </div>
+
+          {/* Pricing Detailing Add-on */}
+          <div className="pricing-addon glass-panel animate-fade-in" style={{ 
+            marginTop: '4rem', 
+            padding: '2.5rem', 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center',
+            borderRadius: '2rem',
+            border: '1px solid var(--glass-border)',
+            background: 'rgba(var(--text-rgb), 0.02)',
+            textAlign: 'left'
+          }}>
+            <div>
+              <h4 style={{ fontSize: '1.4rem', marginBottom: '0.6rem', fontWeight: 800 }}>Need deeper customization?</h4>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', maxWidth: '500px' }}>Explore our full feature matrix, enterprise solutions, and career coaching add-ons in our detailed pricing center.</p>
+            </div>
+            <a href="#pricing-plans" className="btn btn-primary" style={{ padding: '1rem 2rem' }}>
+              View Detailed Plans
+              <ArrowRight size={20} />
+            </a>
+          </div>
         </div>
       </section>
 
